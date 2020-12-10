@@ -1,0 +1,178 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: white;
+  background: linear-gradient(to right, #780206, #061161);
+}
+
+hr {
+  width: 60%;
+  border-width: 0.1px;
+}
+
+.item-list {
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+  padding-inline-start: 0px;
+}
+
+.list-item {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 10rem;
+  margin: 0rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: translateY(0px);
+}
+
+.list-item:hover {
+  background-color: white;
+  color: rgb(14, 30, 37);
+}
+
+.list-item:active {
+  transform: translateY(3px);
+}
+
+.items {
+  margin-top: 5rem;
+}
+.item-image {
+  width: 12rem;
+  border-radius: 5px;
+  box-shadow: 1rem 2rem rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.item-image:hover {
+  transform: scale(1.1);
+}
+
+.item-img,
+.item-desc {
+  display: inline-block;
+}
+
+.item-description {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.row {
+  margin: 0 auto;
+  width: 40%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1-of-2 {
+  float: left;
+  height: 20rem;
+  width: calc((100% - 6rem) / 2);
+}
+
+.col-1-of-3:first-child {
+  margin-right: 6rem;
+}
+
+.col-1-of-3:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.item-details {
+  text-align: center;
+}
+
+.col-1-of-3 {
+  float: left;
+  height: 24rem;
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.col-2-of-3 {
+  float: left;
+  height: 24rem;
+  width: calc((2 * ((100% - 2 * 6rem) / 3)) + 6rem);
+}
+
+.fa {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.fa-heart {
+  color: red;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+.subHeading {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin-top: 4rem;
+}
+
+.social-items {
+  display: inline-block;
+}
+
+.social-links {
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-links:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  .item-list {
+    width: 100%;
+  }
+  .row {
+    width: 90%;
+  }
+  .col-1-of-3 {
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 0rem !important;
+  }
+  .col-2-of-3 {
+    width: 100%;
+  }
+  .subHeading {
+    width: 90%;
+  }
+  hr {
+    width: 90%;
+  }
+}
