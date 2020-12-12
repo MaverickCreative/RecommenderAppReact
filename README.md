@@ -1,2 +1,2 @@
 # RecommenderAppReact
-Created with CodeSandbox
+A simple react app which recommends some handpicked books and shows.
